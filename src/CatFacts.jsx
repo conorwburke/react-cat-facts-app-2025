@@ -9,7 +9,6 @@ export default function CatFacts() {
     
     //Grabbing any savedFacts from LocalStorage and setting state accordingly
     React.useEffect(() => {
-        console.log("setup savedFacts")
         const savedFacts = JSON.parse(localStorage.getItem('savedFacts'))
         if (savedFacts) {
             setSavedFacts(savedFacts)
@@ -92,11 +91,14 @@ export default function CatFacts() {
 
     return (
         <div>
+            <Link to="/my-saved-facts"><button className="right-nav-btn">My Saved Facts</button></Link>
             <div className="facts-container">
                 {catFactsHtml}
             </div>
-            <Link to="/my-saved-facts"><button className="nav-btns">My Saved Facts</button></Link>
-            <button onClick={toggleFacts} className="nav-btns">Show me more cats and facts!</button>
+            <div className="cat-facts-btns">
+                <button onClick={toggleFacts} className="nav-btns more-cats-btn">Show me more cats and facts!</button>
+                <Link to="/my-saved-facts"><button className="nav-btns">My Saved Facts</button></Link>
+            </div>
         </div>
     )
 }

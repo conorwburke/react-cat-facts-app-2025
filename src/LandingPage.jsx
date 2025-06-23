@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router'
 
 export default function LandingPage() {
-    localStorage.clear()
     return (
         <div className="landing-page-els">
             <h1>😻 Are you ready for a dose of feline faces and furry facts? 😻</h1>

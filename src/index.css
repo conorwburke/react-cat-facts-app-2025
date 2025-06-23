@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #363636;
+  background-color: #040f16;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,7 +20,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #0094c6;
 }
 
 body {
@@ -45,24 +45,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #005e7c;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #0094c6;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-.facts-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 500px;
 }
 
 .landing-page-els {
@@ -76,11 +68,19 @@ button:focus-visible {
   font-size: 2.25rem;
 }
 
+.facts-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
 .fact-block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 500px;
 }
 
 .cat-img {
@@ -94,13 +94,47 @@ button:focus-visible {
   margin: 10px 0 0;
 }
 
+.cat-facts-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-cats-btn {
+  max-width: 350px;
+}
+
 .nav-btns {
   font-size: 1.25rem;
   margin-top: 20px;
+}
+
+.right-nav-btn {
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+
+}
+
+.saved-facts {
+  max-width: 600px;
+}
+
+.saved-facts h1 {
+  color: #0094C6;
+}
+
+.saved-facts p {
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .save-btn {
   margin: 10px 0 30px;
   background-color: whitesmoke;
   color: #121212;
+}
+
+.clear-facts-btn {
+  margin-top: 20px;
 }
